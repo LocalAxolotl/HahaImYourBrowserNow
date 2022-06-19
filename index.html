@@ -10,14 +10,15 @@
 <body>
    
     <center>
-     <video loop height="90%" width="90%">
+     <video controls loop height="90%" width="90%">
         <source src="EMXQ2633.MP4.mp4" type="video/mp4">
     </video>
 </center>
 <center>                                
     <button input type="button" id="submit" class="submithover" onclick="alert('sup')">HAPPY BIRTHDAY</button><br> 
 </center>      
-<iframe src="ep.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+<audio controls id="player" autoplay loop>
+    <source src="ep.mp3" type="audio/mp3">
 
 </body>
 </html>
