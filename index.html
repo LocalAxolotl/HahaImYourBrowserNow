@@ -4,27 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
-    <title>tsho tsho tsho</title>
-    <link rel="stylesheet" href="uwu.css">
-    <script>
-        window.onload=function(){
-            var context = new AudioContext();
-        }
-    </script>
+    <title>gift for lar</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
    
     <center>
-     <video autoplay muted loop height="90%" width="90%">
-        <source src="EMXQ2633.MP4.mp4" type="video/mp4">
+        <img src="https://cutewallpaper.org/24/confetti-transparent-gif/view-page-24.html">
+    <video id="audioplayer" src="wwwa.webm" autoplay="false" autostart="false" height="90%" width="90%">
     </video>
 </center>
 <center>                                
-    <button input type="button" id="submit" class="submithover" onclick="alert('sup')">HAPY BIRTHDAY</button><br> 
+    <button input type="button" id="submit" class="submithover" onclick="playAudio()" style="">HAPPY BIRTHDAY<br>click here!</button><br> 
 </center>      
-iframe src="ep.mp3" allow="autoplay" id="audio" hidden></iframe>
-<audio id="player" autoplay control>
-    
-    <source src="ep.mp3" type="audio/mp3">
+    <button onclick="boop()" id="boopa" type="button">secret button</button>
+    <script>
+        document.getElementById("boopa").style.display = "none";
+
+function showStuff() {
+    document.getElementById("boopa").style.display = "inline";
+}
+
+function myFunction() {
+    window.location = "project.html"
+}
+
+setTimeout(showStuff, 15000);
+        var x1 = document.getElementById("audioplayer");
+    function boop(){
+    alert('boop');
+    }
+        function playAudio(){
+            x1.play();
+         
+        }
+        </script>
 </body>
 </html>
