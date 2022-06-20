@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
     <title>gift for lar</title>
-    <link rel="stylesheet" href="uwu.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
    
     <center>
-        <img src="https://cutewallpaper.org/24/confetti-transparent-gif/view-page-24.html">
+        <img src="https://cutewallpaper.org/24/confetti-transparent-gif/effects-1df9f-konfetti-3f272-gif-e4d1a-on-57274-gifer-ca1ef-by-30e6f-coimand.gif" style="display: ;">
     <video id="audioplayer" src="wwwa.webm" autoplay="false" autostart="false" height="90%" width="90%">
     </video>
 </center>
 <center>                                
-    <button input type="button" id="submit" class="submithover" onclick="playAudio()" style="">HAPPY BIRTHDAY<br>click here!</button><br> 
+    <button input type="button" id="submit" class="submithover" onclick="playAudio()">HAPPY BIRTHDAY<br>click here!</button><br> 
 </center>      
-    <button onclick="boop()" id="boopa" type="button">secret button</button>
+    <button onclick="boop('copy')" id="boopa" type="button">secret button</button>
+    <p id="copy"></p>
     <script>
         document.getElementById("boopa").style.display = "none";
-
+        function boop(id)
+        {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
 function showStuff() {
     document.getElementById("boopa").style.display = "inline";
 }
@@ -32,7 +38,7 @@ function myFunction() {
 setTimeout(showStuff, 15000);
         var x1 = document.getElementById("audioplayer");
     function boop(){
-    alert('boop');
+    alert('boop! a wild gift is hiding in your clipboard, paste it in discord chat to reveal it!');
     }
         function playAudio(){
             x1.play();
