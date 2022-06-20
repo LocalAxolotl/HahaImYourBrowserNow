@@ -7,8 +7,24 @@
     padding: 19px;
     border-radius: 9px;
 }
-.submithover:hover {
-    background-color: yellow;
+#submit:hover {
+    background-color: ;
+    transition: 0.7s;
+
+}
+#submit:focus{
+background-color: y;
+background-image: repeating-linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+background-size: 600vw,600vw;
+animation: slide 10s linear infinite forwards;
+}
+@keyframes slide{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 600vw;
+    }
 }
 
 #body1 {
@@ -16,5 +32,7 @@
 width: 100%;
 }
 body {
-    background-color: black;
+    background-image: repeating-linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+background-size: 600vw,600vw;
+animation: slide 10s linear infinite forwards;
 }
